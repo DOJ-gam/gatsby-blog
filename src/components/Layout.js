@@ -2,6 +2,7 @@ import React from "react"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
 import "../styles/global.css"
+// import "../../static/css/bootstrap.min.css"
 
 const Layout = ({ children }) => {
   return (

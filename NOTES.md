@@ -38,3 +38,8 @@
 
   - We can later import the global style to our root file,
   - Import the others in respective components
+
+## 5. Adding Static Files
+
+-Anything we want to access directly froom the browser we can put it in **_static folder_**
+-Example images...
