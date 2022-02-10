@@ -18,4 +18,4 @@
 
 -We need to import 'Link' from gatsby
 -We we use the 'to' to state where the link should go:
-_/<Link to="/">Home</Link>_
+_\<Link to="/">Home</Link>_
