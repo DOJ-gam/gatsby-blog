@@ -21,3 +21,5 @@
   _\<Link to="/">Home\</Link>_
 
 ## 3. Making Layouts
+
+- To create a layout, you create a 'layout file' and wrap any page that needs that layout using the children props...
