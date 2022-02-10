@@ -1,16 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
+import HomePage from "../components/HomePage"
 
 export default function Home() {
   return (
     <Layout>
-      <section>
-        <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>React & React Native Developer in Gambia</p>
-        </div>
-      </section>
+      <HomePage />
     </Layout>
   )
 }

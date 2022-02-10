@@ -23,3 +23,15 @@
 ## 3. Making Layouts
 
 - To create a layout, you create a 'layout file' and wrap any page that needs that layout using the children props...
+
+## 4. Adding Styles
+
+- TO add styles we crate a styles folder
+- We can create styles using methods like:
+
+  - **global.css**: used for global styling
+  - **component.module.css**: for styling individual components
+  - **Styled Components**: styling using styled components
+
+  - We can later import the global style to our root file,
+  - Import the others in respective components
