@@ -1,8 +1,11 @@
 # DOJ - Learning Gatsby By Building a Blog
 
 **Installation:** npm install -g gatsby-cli,
+
 **Check Version:** gatsby --version,
+
 **Check Help:** gatsby --help,
+
 **Run Project:** gatsby develop,
 
 ## 1. Pages and Routes
