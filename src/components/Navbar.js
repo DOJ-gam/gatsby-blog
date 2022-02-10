@@ -1,10 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
+import * as styles from "../styles/Navbar.module.css"
 
 function Navbar() {
   return (
     <div>
-      <nav>
+      <nav className={styles.nav}>
         <h1>DOJ Gatsby Blog</h1>
         <div className="links">
           <Link to="/">Home</Link>

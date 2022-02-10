@@ -3,9 +3,9 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'JetBrains Mono', monospace;
-    color: #fff;
+    color: #fff !important;
 }
 
 html,
@@ -30,29 +30,7 @@ p {
     /* border: 1px solid */
 }
 
-/* nav */
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 40px 0;
-}
 
-nav .links {
-    display: inline-block;
-    text-align: right;
-}
-
-nav a {
-    display: inline-block;
-    margin-left: 20px;
-    font-weight: 400;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover {
-    border-color: white;
-}
 
 footer p {
     text-align: center;
