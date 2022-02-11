@@ -16,7 +16,7 @@ const HomePage = () => {
       <img
         src="/images/b4.png"
         alt="DOJ Side Banner"
-        style={{ maxWidth: "100%" }}
+        style={{ maxWidth: "100%", justifySelf: "end" }}
       />
     </section>
   )
