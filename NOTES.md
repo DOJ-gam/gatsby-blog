@@ -43,3 +43,15 @@
 
 -Anything we want to access directly froom the browser we can put it in **_static folder_**
 -Example images...
+
+## 6. Adding DYnamic Data
+
+- Gatsby can bring in all data sources together into a single GraphQl layer called **the content mesh**
+- It can do that by using **source plugins** for each data source that we use.. Example:
+
+  - data from _Mongo DB_
+  - data from _WordPress_, etc
+
+- Now instead of quering all the different data sources, you only query one single graphql layer, because all the data is brought together.
+
+- It creates a graphql API layer, based on the data sources we tell it to use, using the plugins in the _gatsby-config.js_ file
