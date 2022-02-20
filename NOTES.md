@@ -55,3 +55,12 @@
 - Now instead of quering all the different data sources, you only query one single graphql layer, because all the data is brought together.
 
 - It creates a graphql API layer, based on the data sources we tell it to use, using the plugins in the _gatsby-config.js_ file
+
+# 6.1. Page Queries
+
+- To make queries in files that are inside our pages directory, we nedd to create a _query variable_ at the bottom of our pages and export it.
+- We give assign it to _graphql`**Query goes in here**`_
+- We have to import graphql from gatsby.
+- Now to use the data in our component:
+  - gatsby will fire the query,
+  - It then gives us access to a **data** property inside our component using the props. _(props.data)_
