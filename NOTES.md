@@ -73,3 +73,12 @@
   - useStaticQuery(_grqphql`queryGoesInHere`_)
 - **Note:** is static queries you cannot use query variables, but in page queries you can
 - Also you can only use the hook once in a component, you cant use it more tha once.
+
+# 7. Data Sources
+
+- Gatsby can work with multiple data sources, and it can add them all to our graphql layer
+- For that to be possible: each source that we use, we will need to register a source plugin, so that gatsby can know how to connect to data data source.
+- The source plugins are all registered inside the gatsby config file(inside the plugins array)
+- Some plugins can be registered as just strings(name of the plugin),
+- other times as an object(when they nedd extra configuration options)
+- **Note** that plugins also need to be installed using _npm_ so that gatsby can find them
