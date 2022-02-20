@@ -1,0 +1,13 @@
+.blog {
+    text-align: center
+}
+
+.blog>h2 {
+    font-size: 3em;
+    margin-right: 80px;
+}
+
+.porblogtfolio>h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
