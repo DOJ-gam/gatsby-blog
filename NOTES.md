@@ -55,3 +55,21 @@
 - Now instead of quering all the different data sources, you only query one single graphql layer, because all the data is brought together.
 
 - It creates a graphql API layer, based on the data sources we tell it to use, using the plugins in the _gatsby-config.js_ file
+
+# 6.1. Page Queries
+
+- To make queries in files that are inside our pages directory, we nedd to create a _query variable_ at the bottom of our pages and export it.
+- We give assign it to _graphql`**Query goes in here**`_
+- We have to import graphql from gatsby.
+- Now to use the data in our component:
+  - gatsby will fire the query,
+  - It then gives us access to a **data** property inside our component using the props. _(props.data)_
+
+# 6.2. Static Queries
+
+- When we want to make qraphql queries in other components that are not in the pages directory, we will have to use static queries because the page queries will not work outside the pages folder
+- To make this possible we import a hook from graphql called _useStaticQuery_.
+- We wrap our graphql query inside the hook like:
+  - useStaticQuery(_grqphql`queryGoesInHere`_)
+- **Note:** is static queries you cannot use query variables, but in page queries you can
+- Also you can only use the hook once in a component, you cant use it more tha once.
