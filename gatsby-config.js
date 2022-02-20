@@ -15,6 +15,13 @@ module.exports = {
         path: `${__dirname}/src/notes/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/blogs/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "DOJ Portfolio",
