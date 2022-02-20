@@ -64,3 +64,12 @@
 - Now to use the data in our component:
   - gatsby will fire the query,
   - It then gives us access to a **data** property inside our component using the props. _(props.data)_
+
+# 6.2. Static Queries
+
+- When we want to make qraphql queries in other components that are not in the pages directory, we will have to use static queries because the page queries will not work outside the pages folder
+- To make this possible we import a hook from graphql called _useStaticQuery_.
+- We wrap our graphql query inside the hook like:
+  - useStaticQuery(_grqphql`queryGoesInHere`_)
+- **Note:** is static queries you cannot use query variables, but in page queries you can
+- Also you can only use the hook once in a component, you cant use it more tha once.

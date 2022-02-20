@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 export default function Home({ data }) {
   // console.log(props.data.site.siteMetadata)
   const { title, description } = data.site.siteMetadata
-  console.log(title)
+  // console.log(title)
   return (
     <Layout>
       <Helmet>
