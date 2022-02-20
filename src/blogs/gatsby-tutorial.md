@@ -99,7 +99,3 @@
   - We can also get different properties of each node like:
     - _relative path =>_ is the file path from the main folder: fom folder defined in config file(name, eg. 'text1.txt', or 'folder/text1.txt')
     - _relative directory =>_ referes to weather the file is inside another directory inside the folder defined as the path in the config file.
-
-### 7.1.1. Filtering:
-
-- We can use something called **Query Arguements** to ftch only one out of the whole request based on a specific condition
