@@ -103,3 +103,18 @@
 ### 7.1.1. Filtering:
 
 - We can use something called **Query Arguements** to ftch only one out of the whole request based on a specific condition
+
+# 8. Markdown Files
+
+- We can add markdown files to our graphql layer
+- It allows us to format text using very simple rules, (checkout guide): [_https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax_]
+- You can format markdown like html files.
+  - One of the important things to note about markdown files is the _frontmatther=>_ which is just like the metadata of a markdown file.
+  - It starts with three dashes and ends with three ddashes _(---)_.., and between them we have different properties and values:
+    \---
+    title: Blog 1
+    author: DOJ
+    \---
+  - We can access the markdown files in our graphql layer(things like the file paths, directory, size, etc..) but we cant really display its content in our browser
+  - To access the file content we can use a _transformer plugin from gatsby =>_ what they do is take a data source and transform it to something easier to use in our components.
+  - For markdown files, we can use the _gatsby-transformer-remark=>_ check docs
