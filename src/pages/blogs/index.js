@@ -30,13 +30,13 @@ export default Blogs
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
-          author
-          slug
-          stack
           title
+          stack
+          slug
+          author
         }
         id
       }
