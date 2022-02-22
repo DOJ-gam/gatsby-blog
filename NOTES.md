@@ -118,3 +118,8 @@
   - We can access the markdown files in our graphql layer(things like the file paths, directory, size, etc..) but we cant really display its content in our browser
   - To access the file content we can use a _transformer plugin from gatsby =>_ what they do is take a data source and transform it to something easier to use in our components.
   - For markdown files, we can use the _gatsby-transformer-remark=>_ check docs
+
+## 8.1. Multiple Queries
+
+- You can have multiple queries in one file,
+- All you need to do is put it inside the main query container
