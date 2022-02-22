@@ -123,3 +123,7 @@
 
 - You can have multiple queries in one file,
 - All you need to do is put it inside the main query container
+
+### 8.1.1. Naming Queries
+
+- You can also name queries by assigning them to a 'valiable', and use that variable name when you want to access the data from a particular query.. It is eaasier to handle when dealing with multiple queries

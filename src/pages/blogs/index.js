@@ -5,9 +5,9 @@ import Layout from "../../components/Layout"
 import * as styles from "../../styles/blogs.module.css"
 function Blogs({ data }) {
   // console.log(data)
-  const blogs = data.allMarkdownRemark.nodes
+  const blogs = data.blogs.nodes
   // console.log(blog)
-  const { description, copyright } = data.site.siteMetadata
+  const { description, copyright } = data.metaData.siteMetadata
   // console.log(description)
   return (
     <Layout>
@@ -37,7 +37,9 @@ export default Blogs
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    blogs: allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           title
@@ -48,7 +50,7 @@ export const query = graphql`
         id
       }
     }
-    site {
+    metaData: site {
       siteMetadata {
         description
         copyright
