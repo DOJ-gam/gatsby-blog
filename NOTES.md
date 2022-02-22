@@ -111,10 +111,19 @@
 - You can format markdown like html files.
   - One of the important things to note about markdown files is the _frontmatther=>_ which is just like the metadata of a markdown file.
   - It starts with three dashes and ends with three ddashes _(---)_.., and between them we have different properties and values:
-    \---
+    "---
     title: Blog 1
     author: DOJ
-    \---
+    "---
   - We can access the markdown files in our graphql layer(things like the file paths, directory, size, etc..) but we cant really display its content in our browser
   - To access the file content we can use a _transformer plugin from gatsby =>_ what they do is take a data source and transform it to something easier to use in our components.
   - For markdown files, we can use the _gatsby-transformer-remark=>_ check docs
+
+## 8.1. Multiple Queries
+
+- You can have multiple queries in one file,
+- All you need to do is put it inside the main query container
+
+### 8.1.1. Naming Queries
+
+- You can also name queries by assigning them to a 'valiable', and use that variable name when you want to access the data from a particular query.. It is eaasier to handle when dealing with multiple queries
