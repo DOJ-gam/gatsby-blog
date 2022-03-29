@@ -127,3 +127,22 @@
 ### 8.1.1. Naming Queries
 
 - You can also name queries by assigning them to a 'valiable', and use that variable name when you want to access the data from a particular query.. It is eaasier to handle when dealing with multiple queries
+
+# 9. Image Optimization
+
+- if you access your images from the public folder, by default the images are not optimized for the web or mobile.
+- if it is a big image, it will download that same image for both mobile and web..
+- It will not resize authomatically or load in lazily
+- When using gatsby, you can use a gatsby plugin to help in the optimizing of images.
+- We can use the _gatsby image plugin_ : [link](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/?=gatsby%20image)
+- This plugin also needs other plugins installed before it can work, check docs.
+- After installation, We have to go into 'src' folder and create an images folder. This is because we need to do some processing to the images, and they are going to be added to our graphql layer. If images are put in our static diretory then these processings will not be done.
+- Then we add the installed plugins to our plugins array in the config file.
+  ```js
+  plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`]
+  ```
+- But we will also need to use the _file system source_ to be able to access the images folder we created, so that gatsby will be able to know that it can look into the images folder.
+  - We use the file to grab the images in the images directory
+- After that, we can go to our graphiQL editor and then go to files(make sure you use relative path to get the exact image).
+  - Then we need to also select the _childImageSharp_(from the plugin we installed), select either of its properties(eg. the fluid image type which has diffrent sizes(it is responsive)).
+    - From there you can also select different properties of the fluid like the different sizes, src of the file srcSet, etc..
