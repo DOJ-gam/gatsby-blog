@@ -144,5 +144,42 @@
 - But we will also need to use the _file system source_ to be able to access the images folder we created, so that gatsby will be able to know that it can look into the images folder.
   - We use the file to grab the images in the images directory
 - After that, we can go to our graphiQL editor and then go to files(make sure you use relative path to get the exact image).
+
   - Then we need to also select the _childImageSharp_(from the plugin we installed), select either of its properties(eg. the fluid image type which has diffrent sizes(it is responsive)).
-    - From there you can also select different properties of the fluid like the different sizes, src of the file srcSet, etc..
+
+    - From there you can also select different properties of the fluid like the different sizes, src of the file, srcSet, etc..
+    - ALl you need to do is to use that query in the page that you want to perform that query in. eg:
+
+```js
+export const query = graphql`
+  query Banner {
+    file(relativePath: { eq: "dic3.png" }) {
+      childrenImageSharp {
+        fluid {
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+  }
+`
+```
+
+- Insetad of writing all the above code(the different properties for the fluid), you can use something called _fragments=>_ what this does is package up a number of different properties that we need to use in the image component that we want to use. You can use the spreed operator to like:
+
+```js
+export const query = graphql`
+  query Banner {
+    file(relativePath: { eq: "dic3.png" }) {
+      childrenImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+```
+
+- So to view our image we will make use of the gatsby image plugin we downloaded.
